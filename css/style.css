@@ -100,31 +100,79 @@ h2 {
 /* =Content Styles
 -------------------------------------------------------------- */
 
-.wrapper {
-  text-align: center;		
-  position: absolute;
-  overflow: hidden;
-  display: table-cell;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
 
-.scene,
-.layer {
-  display: block;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
 
+/* Scene and Layer */
 .scene {
-  position: relative;
-  overflow: hidden;
-}
-
+	position: absolute;
+    overflow: hidden;
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    z-index: 1; /* Ensure it is above the background */
+  }
+  
+  .layer {
+	display: block;
+	position: absolute; /* Allows layering */
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* Title */
+  .title h2 {
+	position: relative;
+	z-index: 20; /* Ensure it's above everything */
+	color: white; /* Ensure visibility over the video */
+	text-align: center;
+	font-size: 2rem;
+  }
+  
+  /* Countdown */
+  .countdown {
+	position: relative;
+	z-index: 20; /* Ensure it appears above other layers */
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	color: white;
+	font-size: 1.5rem;
+  }
+  
+  /* Subtitle */
+  .sub-title {
+	position: relative;
+	z-index: 20; /* Visible above background */
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+  }
+  
+  /* Video Layer */
+  .background-video {
+	position: fixed; /* Makes it static in the background */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0; /* Ensures it stays behind everything */
+  }
+  
 .layer { position: absolute; }
 
 .layer div {
@@ -1126,3 +1174,62 @@ h2 {
 	}
   }
   
+  .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure the video is behind all other elements */
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire background */
+    z-index: -1;
+    background: black; /* Fallback color for the video */
+}
+.wrapper {
+    position: absolute;
+    overflow: hidden;
+    display: table-cell;
+    height: fit-content;
+    width: fit-content;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    z-index: 1; /* Ensure it is above the background */
+}
+
+.content-container {
+    position: relative;
+    z-index: 10; /* Ensure content appears above the background */
+}
+.content-wrapper{
+	z-index: 10;
+}
+.contact ul.icons li a {
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.contact ul.icons li a:hover {
+    color: #FFBB12;
+}
+
+
+
