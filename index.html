@@ -44,76 +44,72 @@
         <script src="js/jquery.js"></script>
     </head>
     <body>
-        
+        <div class="background-video">
+            <video autoplay muted loop>
+              <source src="vid/bg_1080p.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          
+          <div class="scene unselectable" id="scene">
+            <!-- Hero Layer -->
+            <li class="layer" data-depth="0.20">
+              <div class="title">
+                <h2>GEEARR CONSUMER SOLUTIONS PVT. LTD.</h2>
+                <span class="line"></span>
+              </div>
+            </li>
+          
+            <li class="layer" data-depth="0.25">
+              <div class="sphere">
+                <img alt="sphere" src="images/sphere.png">
+              </div>
+            </li>
+          
+            <li class="layer" data-depth="0.30">
+              <div class="hero">
+                <div class="countdown">
+                  <div><span id="days">00</span><p>DAYS</p></div>
+                  <div><span id="hours">00</span><p>HRS</p></div>
+                  <div><span id="minutes">00</span><p>MIN</p></div>
+                  <div><span id="seconds">00</span><p>SEC</p></div>
+                </div>
+                <p class="sub-title">
+                  உங்கள் வெற்றிக்கான புதிய துவக்கம்!<br>
+                  நாம் அறிமுகப்படுத்தும் மாற்றத்துடன் நேரடி விற்பனை <br>
+                  மற்றும் ரெஃபரல் மார்க்கெட்டிங் உலகத்தில் ஒரு புரட்சிக்கு தயாராகுங்கள்!
+                </p>
+              </div>
+            </li>
+            <!-- Flakes -->
+            <li class="layer" data-depth="0.40">
+                <div class="depth-1 flake1">
+                    <img alt="flake" src="images/flakes/depth1/flakes1.png">
+                </div>
+                <div class="depth-1 flake2">
+                    <img alt="flake" src="images/flakes/depth1/flakes2.png">
+                </div>
+                <div class="depth-1 flake3">
+                    <img alt="flake" src="images/flakes/depth1/flakes3.png">
+                </div>
+                <div class="depth-1 flake4">
+                    <img alt="flake" src="images/flakes/depth1/flakes4.png">
+                </div>
+            </li>
 
-        <div class="wrapper">
-            <ul class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" id="scene">
-                <li class="layer" data-depth="0.00"></li> <!-- BG -->
-
-                <li class="layer" data-depth="0.10">
-                    <div class="background"></div>
-                </li>
-
-                <!-- Hero -->
-                <li class="layer" data-depth="0.20">
-                    <div class="title">
-                        <h2>GEEARR CONSUMER SOLUTIONS PVT. LTD.</h2>
-                        <span class="line"></span>
-                    </div>
-                </li>
-
-                <li class="layer" data-depth="0.25">
-                    <div class="sphere">
-                        <img alt="sphere" src="images/sphere.png">
-                    </div>
-                </li>
-
-                <li class="layer" data-depth="0.30">
-                    <div class="hero">
-                        <!-- Countdown Display -->
-                        <div class="countdown">
-                            <div><span id="days">00</span><p>DAYS</p></div>
-                            <div><span id="hours">00</span><p>HRS</p></div>
-                            <div><span id="minutes">00</span><p>MIN</p></div>
-                            <div><span id="seconds">00</span><p>SEC</p></div>
-                        </div>
-                        <p class="sub-title">
-                            உங்கள் வெற்றிக்கான புதிய துவக்கம்!<br>
-                            நாம் அறிமுகப்படுத்தும் மாற்றத்துடன் நேரடி விற்பனை <br> மற்றும் ரெஃபரல் மார்க்கெட்டிங் உலகத்தில் ஒரு புரட்சிக்கு தயாராகுங்கள்!
-                        </p>
-                    </div>
-                </li>
-
-                <!-- Flakes -->
-                <li class="layer" data-depth="0.40">
-                    <div class="depth-1 flake1">
-                        <img alt="flake" src="images/flakes/depth1/flakes1.png">
-                    </div>
-                    <div class="depth-1 flake2">
-                        <img alt="flake" src="images/flakes/depth1/flakes2.png">
-                    </div>
-                    <div class="depth-1 flake3">
-                        <img alt="flake" src="images/flakes/depth1/flakes3.png">
-                    </div>
-                    <div class="depth-1 flake4">
-                        <img alt="flake" src="images/flakes/depth1/flakes4.png">
-                    </div>
-                </li>
-
-                <!-- Contact -->
-                <li class="layer" data-depth="0.20">
-                    <div class="contact">
-                        <ul class="icons">
-                            <li><a class="behance" href="https://www.facebook.com/profile.php?id=61556452987695&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="twitter" href="https://www.instagram.com/gr_consumer_solution_pvt.ltd?igsh=c2ptejAzMm5kNDhp"><i class="fa fa-instagram"></i></a></li>
-                            <li><a class="dribbble" href="https://whatsapp.com/channel/0029VaNpmy3LI8YUjclF2z43"><i class="fa fa-whatsapp"></i></a></li>
-                        </ul>
-                        developed by <a href="https://smartside.in/" target="_blank" style="color: #FFBB12;">Smartside</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
+            <!-- Contact -->
+            <li class="layer" data-depth="0.20">
+                <div class="contact">
+                    <ul class="icons">
+                        <li><a class="behance" href="https://www.facebook.com/profile.php?id=61556452987695&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="https://www.instagram.com/gr_consumer_solution_pvt.ltd?igsh=c2ptejAzMm5kNDhp"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="dribbble" href="https://whatsapp.com/channel/0029VaNpmy3LI8YUjclF2z43"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                    developed by <a href="https://smartside.in/" target="_blank" style="color: #FFBB12;">Smartside</a>
+                </div>
+            </li>
+          </div>
+          
         <!-- Javascript -->
         <script src="js/plugins.js"></script> 
         <script src="js/jquery.countdown.min.js"></script> 
